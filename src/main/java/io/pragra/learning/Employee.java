@@ -11,4 +11,4 @@ public class Employee {
     private String lastName;
     private Integer salary;
     private String company;
-}
+}//pojo

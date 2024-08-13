@@ -52,7 +52,7 @@ public class Main {
             e.setSalary((int) (e.getSalary() * 1.05));
             return e;
         }).map(e -> e.getSalary())
-                .mi
+
                 .reduce(1, (a, b) -> a * b);
         System.out.println(reduce);
 

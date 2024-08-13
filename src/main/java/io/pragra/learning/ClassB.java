@@ -3,9 +3,10 @@ package io.pragra.learning;
 import java.util.Optional;
 
 public class ClassB {
-    public Optional<Employee> methodB(){
-        Optional<Employee> optionalEmployee = Optional.ofNullable(Employee.builder().firstName("Atin").build());
-        // getting Employee object from database
+    public Optional<Employee> retrieveEmployee(){
+        // Retriving employee from DB
+        EmployeeDAO employeeDAO = new EmployeeDAO();
+        Optional<Employee> optionalEmployee = employeeDAO.getEmployeeById();
         return optionalEmployee;
     }
 }

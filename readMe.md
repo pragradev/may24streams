@@ -26,4 +26,13 @@ MaptoDouble
 FindFirst
 FindAny
 AnyMatch
+Flatmap
+
 sorted -> also pass comparator
+
+
+
+Optionals: 
+
+ Exercise: List of integer values: Marks for students
+do sorting with comparator
